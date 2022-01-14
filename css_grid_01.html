@@ -4,10 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>CSS Grid</title>
+    <link rel="stylesheet" href="style.css">
     
-    <link rel="stylesheet" href="style.css">    
+    <title>CSS Grid 01</title>
+        
+    <style>
+        .container{
+    /*
+    Ocupa somente a área do elemento dentro da <div>
+    display: inline-grid;
+    */
+
+    /* Informa que layout vai ser em formato de grade */
+    display: grid;
+    
+    /* Quantidade de Colunas no Grid*/
+    grid-template-columns: auto 150 auto;
+
+    /* Tamanho das Linhas no Grid*/
+    grid-template-rows: 100px auto 80px;
+}
+    </style>   
 </head>
 <body>
     <h2>Container - Base do Layout GRID </h2>
