@@ -1,0 +1,24 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    /*
+    Ocupa somente a área do elemento dentro da <div>
+    display: inline-grid;
+    */
+
+    /* Informa que layout vai ser em formato de grade */
+    display: grid;
+    
+    /* Quantidade de Colunas no Grid*/
+    grid-template-columns: auto 100px auto;
+
+    /* Tamanho das Linhas no Grid*/
+    grid-template-rows: 50px auto 150px;
+}
+.item{
+    background-color: #048;
+    color: #fff;
+    border: 1px solid black;
+    text-align: center;
+}
