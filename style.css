@@ -11,10 +11,10 @@ body{
     display: grid;
     
     /* Quantidade de Colunas no Grid*/
-    grid-template-columns: auto 100px auto;
+    grid-template-columns: auto 150px auto;
 
     /* Tamanho das Linhas no Grid*/
-    grid-template-rows: 50px auto 150px;
+    grid-template-rows: 30px auto 40px;
 }
 .item{
     background-color: #048;
@@ -27,7 +27,7 @@ body{
 */
 .espacamento{   
     grid-row-gap: 2px;
-    grid-column-gap: 10px;
+    grid-column-gap: 5px;
     
     /*
     Espacamentos iguais nas linhas e nas colunas
@@ -36,4 +36,26 @@ body{
     Espacamento na linha e na coluna
     grid-gap: 2px 10px;
     */
+}
+
+/* grid-column e grid-row
+    Configura a posição inicial e final das linhas e colunas no grid.
+    Não é propriedade inclusiva, ou seja, vai até o valor informado mas não inclui o valor final.
+    span - Informando a propriedade span no elemento, o valor inclui o valor final.
+*/
+.posicao1{
+    /* Não incluir o valor final informado */
+    /*grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 3; */
+
+    /* Pode ser declarado com span, onde a linha ou coluna inclui o valor final informado */
+    grid-column: 1 / span 2;
+    /*grid-row: 1 / span 2;*/   
+}
+.posicao2{
+    grid-column: 2 / span 3;
+    grid-row: 3 / span 2;
 }
