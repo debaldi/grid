@@ -22,3 +22,18 @@ body{
     border: 1px solid black;
     text-align: center;
 }
+/* Gap
+    Coloca espaçamento entre as linhas e colunas
+*/
+.espacamento{   
+    grid-row-gap: 2px;
+    grid-column-gap: 10px;
+    
+    /*
+    Espacamentos iguais nas linhas e nas colunas
+    grid-gap: 10px;
+    
+    Espacamento na linha e na coluna
+    grid-gap: 2px 10px;
+    */
+}
