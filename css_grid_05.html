@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>CSS Grid 05</title>
+
+    <style>
+        /*
+        Cria e delimita a área de um Template, dependendo das propriedades:
+
+        grid-template-columns: 
+        grid-template-rows:
+        grid-template-areas:
+
+        e das classes para criação do template.
+        .header
+        .main
+        .session
+        .footer
+        entre outras
+        */
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: auto;
+            grid-template-areas: 
+                "cabeca cabeca cabeca cabeca"
+                "corpo corpo corpo lateral"
+                "rodape rodape rodape rodape"
+            ;
+        }
+        .header{
+            grid-area: cabeca;
+        }
+        .principal{
+            grid-area: corpo;
+        }
+        .lateral{
+            grid-area: lateral;
+        }
+        .footer{
+            grid-area: rodape;
+        }
+    </style>
+       
+</head>
+<body>
+    <h3>grid-template-area</h3>
+    <div class="container">
+        <div class="item header">HEADER</div>
+        <div class="item principal">PRINCIPAL</div>
+        <div class="item lateral">LATERAL</div>
+        <div class="item footer">FOOTER</div>
+
+    </div>
+    
+</body>
+</html>
